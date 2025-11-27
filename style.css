@@ -53,10 +53,13 @@ ul li a {
 .header a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: transform 0.1s;
+  transform-origin: center center;
 }
+
 .header a:hover {
-  font-weight: 600;
-  color: rgb(211, 211, 211);
+  color: rgb(226, 226, 226);
+  transform: scale(1.04);
 }
 
 .header-index {
@@ -387,6 +390,15 @@ h3 {
   flex: 1 1 360px;
   margin: 20px 0;
   font-size: 14px;
+}
+
+.contributions h2 {
+  margin: 0;
+}
+
+.contributions h3 {
+  margin: 0;
+  margin-top: 5px;
 }
 
 /* Layout contributions grid: div on left, iframe on right */
